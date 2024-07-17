@@ -30,7 +30,7 @@ def fit_arma_model(data):
 
 
 def open_test_data():
-    data = pd.read_csv("./arma_data.csv", delim_whitespace=True, header=None)
+    data = pd.read_csv("arma_data_without_q.csv", delim_whitespace=True, header=None)
     # column data 설정
     data.columns = ['t', 'y_t', 'y_t_1', 'y_t_hat', 'epsilon_t']
     # 0번째 index 제거
